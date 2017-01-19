@@ -1,0 +1,12 @@
+{
+  "name": "Content Script Example",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Messes around on casey-reed.com",
+  "content_scripts": [
+    {
+      "matches": ["*://www.casey-reed.com/chrome-extension-test-page/"],
+      "js": ["scripts.js"]
+    }
+  ]
+}
