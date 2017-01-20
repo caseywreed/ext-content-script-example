@@ -1,9 +1,18 @@
 console.log('Extension loading successful')
 
-// //Delete that annoying Twitter DIV
+// //Remove that annoying Twitter DIV
 // let annoyingDiv = document.getElementsByClassName('import-prompt')
 // for (var i=0; i < annoyingDiv.length; i++) {
 //     annoyingDiv[i].remove()
+// }
+
+// //Remove Promoted Tweets
+// const removePromotedTweets = function () {
+//     let promotedTweets = document.getElementsByClassName('promoted-tweet')
+//     for (var i=0; i < promotedTweets.length; i++) {
+//         // promotedTweets[i].remove()
+//         promotedTweets[i].innerHTML = 'A GROSS PROMOTED TWEET THIS IS DISGUSTING'
+//     }
 // }
 
 //Alter text on the page

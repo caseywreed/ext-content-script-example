@@ -5,8 +5,10 @@
   "description": "Messes around on casey-reed.com",
   "content_scripts": [
     {
-      "matches": ["*://www.casey-reed.com/chrome-extension-test-page/"],
+      "matches": ["*://*.twitter.com/*"],
       "js": ["scripts.js"]
     }
   ]
 }
+
+//"*://www.casey-reed.com/chrome-extension-test-page/",
