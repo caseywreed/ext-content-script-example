@@ -1,12 +1,13 @@
 console.log('Extension loading successful')
 
 // //Remove that annoying Twitter DIV
-// let annoyingDiv = document.getElementsByClassName('import-prompt')
-// for (var i=0; i < annoyingDiv.length; i++) {
-//     annoyingDiv[i].remove()
-// }
+// let annoyingDiv = document.querySelectorAll('.import-prompt')
+// annoyingDiv.forEach((div) => {
+//     div.remove()
+// })
 
 // //Remove Promoted Tweets
+// //Make this timeout to every 1 second so that it runs but never infinite loops
 // const removePromotedTweets = function () {
 //     let promotedTweets = document.getElementsByClassName('promoted-tweet')
 //     for (var i=0; i < promotedTweets.length; i++) {
@@ -20,16 +21,16 @@ let header = document.getElementById('mainHeader')
 header.innerHTML = 'What an annoying header'
 
 //Deactivate buttons!
-let buttons = document.getElementsByClassName('button')
-for (var i=0; i < buttons.length; i++) {
-    buttons[i].disabled = true
-}
+let buttons = document.querySelectorAll('.button')
+buttons.forEach((button) => {
+    button.disabled = true
+})
 
 //Change in-line CSS
-let listItems = document.getElementsByClassName('listItem')
-for (var i=0; i < listItems.length; i++) {
-    listItems[i].style.color = 'red'
-}
+let listItems = document.querySelectorAll('.listItem')
+listItems.forEach((li) => {
+    li.style.color = 'red'
+})
 
 //Add your own HTML
 var newDiv = document.createElement('div')
